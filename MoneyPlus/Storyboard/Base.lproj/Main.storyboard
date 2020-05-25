@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ONo-DQ-fMH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ONo-DQ-fMH">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -251,12 +251,13 @@
                                                 <constraint firstItem="yQO-Sw-UWH" firstAttribute="leading" secondItem="6Wb-fG-pu6" secondAttribute="leading" constant="15" id="qgS-ak-GwO"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <gestureRecognizers/>
                                         <connections>
                                             <outlet property="activityLabel" destination="en0-nQ-bRW" id="uAA-0L-b82"/>
                                             <outlet property="dateLabel" destination="9Bw-bC-ysH" id="MX1-bt-4Kr"/>
                                             <outlet property="moneyLabel" destination="ZUY-Yt-2f9" id="Tqt-HX-rnt"/>
                                             <outlet property="typeImageView" destination="sln-w3-Bw4" id="IPL-bl-dHK"/>
-                                            <segue destination="gQz-me-HuI" kind="presentation" identifier="showDetail" id="jOE-Tr-opq"/>
+                                            <segue destination="gQz-me-HuI" kind="presentation" identifier="showDetail" id="ixw-ca-MbL"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -635,8 +636,10 @@
         <!--Navigation Controller-->
         <scene sceneID="r5Z-mY-pyz">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bz4-2m-Pqe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QHz-4o-YDd" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Z3s-X3-WcW"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2IG-Pl-sMJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -646,7 +649,6 @@
                         <segue destination="eOy-0h-Vz9" kind="relationship" relationship="rootViewController" id="w74-PX-xYj"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bz4-2m-Pqe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1993" y="129"/>
         </scene>

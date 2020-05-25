@@ -11,7 +11,6 @@ import CoreData
 
 class NewPaymentController: UITableViewController, UITextFieldDelegate {
     
-    var sourceViewController: ViewController!
     var transaction: TransactionMO!
     
     // MARK: - Outlet Property

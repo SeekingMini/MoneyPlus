@@ -10,7 +10,7 @@ import UIKit
 
 class TransactionTableViewCell: UITableViewCell {
     
-    // Outlet参数
+    // Outlet properties
     @IBOutlet var typeImageView: UIImageView!
     @IBOutlet var activityLabel: UILabel!
     @IBOutlet var dateLabel: UILabel!

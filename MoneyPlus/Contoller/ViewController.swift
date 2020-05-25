@@ -85,7 +85,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
-    // MARK: - Table View Delegate Method
+    // MARK: - Table View Delegate
     
     func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         // add delete action
@@ -107,14 +107,10 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         
         return swipeConfiguration
     }
-    
-    // MARK: - Table View Delegate
-    
+
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
     }
-    
-    
     
     // MARK: - Navigation
     
@@ -126,7 +122,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
                 let destinationController = segue.destination as! TransactionDetailViewController
                 destinationController.transaction = transactions[indexPath.row]
             }
-        
+            
         default:
             break
         }
