@@ -13,14 +13,14 @@ class TransactionDetailViewController: UIViewController {
     var transaction: TransactionMO!
     
     // Outlet参数
-    @IBOutlet var displayView: UIView!
-    @IBOutlet var closeButton: UIButton!
+    @IBOutlet weak var displayView: UIView!
+    @IBOutlet weak var closeButton: UIButton!
     
-    @IBOutlet var activityLabel: UILabel!
-    @IBOutlet var dateLabel: UILabel!
-    @IBOutlet var locationLabel: UILabel!
-    @IBOutlet var moneyLabel: UILabel!
-    @IBOutlet var detailLabel: UILabel!
+    @IBOutlet weak var activityLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var locationLabel: UILabel!
+    @IBOutlet weak var moneyLabel: UILabel!
+    @IBOutlet weak var detailLabel: UILabel!
     
     // Action参数
     @IBAction func close(sender: UIButton) {

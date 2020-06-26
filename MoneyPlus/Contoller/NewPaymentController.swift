@@ -14,30 +14,30 @@ class NewPaymentController: UITableViewController, UITextFieldDelegate {
     var transaction: TransactionMO!
     
     // MARK: - Outlet Property
-    @IBOutlet var titleTextField: UITextField! {
+    @IBOutlet weak var titleTextField: UITextField! {
         didSet {
             
             titleTextField.becomeFirstResponder()
             titleTextField.delegate = self
         }
     }
-    @IBOutlet var dateTextField: UITextField! {
+    @IBOutlet weak var dateTextField: UITextField! {
         didSet {
             dateTextField.delegate = self
         }
     }
-    @IBOutlet var amountTextField: UITextField! {
+    @IBOutlet weak var amountTextField: UITextField! {
         didSet {
             amountTextField.delegate = self
         }
     }
-    @IBOutlet var typeSegmentControl: UISegmentedControl!
-    @IBOutlet var locationTextField: UITextField! {
+    @IBOutlet weak var typeSegmentControl: UISegmentedControl!
+    @IBOutlet weak var locationTextField: UITextField! {
         didSet {
             locationTextField.delegate = self
         }
     }
-    @IBOutlet var detailTextField: UITextField! {
+    @IBOutlet weak var detailTextField: UITextField! {
         didSet {
             detailTextField.delegate = self
         }

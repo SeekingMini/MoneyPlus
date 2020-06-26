@@ -19,9 +19,9 @@ class ViewController: UIViewController, NSFetchedResultsControllerDelegate {
     
     // Outlet property
     @IBOutlet var tableView: UITableView!
-    @IBOutlet var totalBalanceLabel: UILabel!
-    @IBOutlet var expenseLabel: UILabel!
-    @IBOutlet var incomeLabel: UILabel!
+    @IBOutlet weak var totalBalanceLabel: UILabel!
+    @IBOutlet weak var expenseLabel: UILabel!
+    @IBOutlet weak var incomeLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,7 +61,7 @@ class ViewController: UIViewController, NSFetchedResultsControllerDelegate {
         tableView.estimatedRowHeight = 60.0
         tableView.rowHeight = UITableView.automaticDimension
     }
-
+    
 }
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
@@ -107,7 +107,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         
         return swipeConfiguration
     }
-
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
     }
@@ -132,7 +132,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
 
 extension ViewController {
     
-    func updateLabelValues() {
+    private func updateLabelValues() {
         income = 0.0
         expense = 0.0
         
