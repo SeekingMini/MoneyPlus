@@ -3,6 +3,8 @@ MoneyPlus
 
 An open-source app which can help you record income and expense.
 
+This version is no longer maintained. I will take some time to develop a React-Native version.
+
 [中文版说明](./README_ZH.md)
 
 ### 0 Introduction
